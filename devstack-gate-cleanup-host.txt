@@ -1,0 +1,514 @@
+localhost | SUCCESS | rc=0 >>
+2016-06-28 14:11:47.934 | + cd /home/jenkins/workspace/kaminario-dsvm-tempest-full-FC
+2016-06-28 14:11:47.937 | + sleep 2
+2016-06-28 14:11:49.938 | + which journalctl
+2016-06-28 14:11:49.941 | + sudo cp /var/log/syslog /opt/stack/logs/syslog.txt
+2016-06-28 14:11:49.951 | + sudo cp /var/log/kern.log /opt/stack/logs/kern_log.txt
+2016-06-28 14:11:49.963 | + uses_debs
+2016-06-28 14:11:49.966 | + type apt-get
+2016-06-28 14:11:49.968 | apt-get is /usr/bin/apt-get
+2016-06-28 14:11:49.971 | + local apache_logs=/var/log/apache2
+2016-06-28 14:11:49.973 | + sudo cp -r /var/log/apache2 /opt/stack/logs/apache
+2016-06-28 14:11:49.982 | + '[' -d /var/log/rabbitmq ']'
+2016-06-28 14:11:49.984 | + sudo cp -r /var/log/rabbitmq /opt/stack/logs
+2016-06-28 14:11:49.989 | + '[' -d /var/log/postgresql ']'
+2016-06-28 14:11:49.990 | + '[' -f /var/log/mysql.err ']'
+2016-06-28 14:11:49.992 | + sudo cp /var/log/mysql.err /opt/stack/logs/mysql_err.log
+2016-06-28 14:11:49.998 | + '[' -f /var/log/mysql.log ']'
+2016-06-28 14:11:50.000 | + sudo cp /var/log/mysql.log /opt/stack/logs/
+2016-06-28 14:11:50.006 | + '[' -d /var/log/libvirt ']'
+2016-06-28 14:11:50.008 | + sudo cp -r /var/log/libvirt /opt/stack/logs/
+2016-06-28 14:11:50.024 | + sudo cp -r /usr/share/libvirt/cpu_map.xml /opt/stack/logs/libvirt/cpu_map.xml
+2016-06-28 14:11:50.034 | + sudo cp -r /etc/sudoers.d /opt/stack/logs/
+2016-06-28 14:11:50.042 | + sudo cp /etc/sudoers /opt/stack/logs/sudoers.txt
+2016-06-28 14:11:50.049 | + sudo mkdir /opt/stack/logs/etc/
+2016-06-28 14:11:50.058 | + for PROJECT in '$PROJECTS' openstack
+2016-06-28 14:11:50.061 | ++ basename openstack/automaton
+2016-06-28 14:11:50.063 | + proj=automaton
+2016-06-28 14:11:50.065 | + '[' -d /etc/automaton ']'
+2016-06-28 14:11:50.066 | + for PROJECT in '$PROJECTS' openstack
+2016-06-28 14:11:50.068 | ++ basename openstack/ceilometer
+2016-06-28 14:11:50.070 | + proj=ceilometer
+2016-06-28 14:11:50.072 | + '[' -d /etc/ceilometer ']'
+2016-06-28 14:11:50.074 | + for PROJECT in '$PROJECTS' openstack
+2016-06-28 14:11:50.076 | ++ basename openstack/ceilometermiddleware
+2016-06-28 14:11:50.077 | + proj=ceilometermiddleware
+2016-06-28 14:11:50.079 | + '[' -d /etc/ceilometermiddleware ']'
+2016-06-28 14:11:50.080 | + for PROJECT in '$PROJECTS' openstack
+2016-06-28 14:11:50.082 | ++ basename openstack/cinder
+2016-06-28 14:11:50.083 | + proj=cinder
+2016-06-28 14:11:50.085 | + '[' -d /etc/cinder ']'
+2016-06-28 14:11:50.086 | + sudo cp -r /etc/cinder /opt/stack/logs/etc/
+2016-06-28 14:11:50.088 | + for PROJECT in '$PROJECTS' openstack
+2016-06-28 14:11:50.089 | ++ basename openstack/cliff
+2016-06-28 14:11:50.091 | + proj=cliff
+2016-06-28 14:11:50.092 | + '[' -d /etc/cliff ']'
+2016-06-28 14:11:50.094 | + for PROJECT in '$PROJECTS' openstack
+2016-06-28 14:11:50.095 | ++ basename openstack/debtcollector
+2016-06-28 14:11:50.097 | + proj=debtcollector
+2016-06-28 14:11:50.098 | + '[' -d /etc/debtcollector ']'
+2016-06-28 14:11:50.100 | + for PROJECT in '$PROJECTS' openstack
+2016-06-28 14:11:50.102 | ++ basename openstack-dev/devstack
+2016-06-28 14:11:50.103 | + proj=devstack
+2016-06-28 14:11:50.105 | + '[' -d /etc/devstack ']'
+2016-06-28 14:11:50.106 | + for PROJECT in '$PROJECTS' openstack
+2016-06-28 14:11:50.107 | ++ basename openstack-dev/pbr
+2016-06-28 14:11:50.109 | + proj=pbr
+2016-06-28 14:11:50.110 | + '[' -d /etc/pbr ']'
+2016-06-28 14:11:50.112 | + for PROJECT in '$PROJECTS' openstack
+2016-06-28 14:11:50.114 | ++ basename openstack/dib-utils
+2016-06-28 14:11:50.115 | + proj=dib-utils
+2016-06-28 14:11:50.117 | + '[' -d /etc/dib-utils ']'
+2016-06-28 14:11:50.119 | + for PROJECT in '$PROJECTS' openstack
+2016-06-28 14:11:50.120 | ++ basename openstack/diskimage-builder
+2016-06-28 14:11:50.122 | + proj=diskimage-builder
+2016-06-28 14:11:50.124 | + '[' -d /etc/diskimage-builder ']'
+2016-06-28 14:11:50.125 | + for PROJECT in '$PROJECTS' openstack
+2016-06-28 14:11:50.127 | ++ basename openstack/django_openstack_auth
+2016-06-28 14:11:50.128 | + proj=django_openstack_auth
+2016-06-28 14:11:50.131 | + '[' -d /etc/django_openstack_auth ']'
+2016-06-28 14:11:50.132 | + for PROJECT in '$PROJECTS' openstack
+2016-06-28 14:11:50.135 | ++ basename openstack/futurist
+2016-06-28 14:11:50.136 | + proj=futurist
+2016-06-28 14:11:50.138 | + '[' -d /etc/futurist ']'
+2016-06-28 14:11:50.139 | + for PROJECT in '$PROJECTS' openstack
+2016-06-28 14:11:50.140 | ++ basename openstack/glance
+2016-06-28 14:11:50.142 | + proj=glance
+2016-06-28 14:11:50.143 | + '[' -d /etc/glance ']'
+2016-06-28 14:11:50.145 | + sudo cp -r /etc/glance /opt/stack/logs/etc/
+2016-06-28 14:11:50.147 | + for PROJECT in '$PROJECTS' openstack
+2016-06-28 14:11:50.148 | ++ basename openstack/glance_store
+2016-06-28 14:11:50.149 | + proj=glance_store
+2016-06-28 14:11:50.151 | + '[' -d /etc/glance_store ']'
+2016-06-28 14:11:50.153 | + for PROJECT in '$PROJECTS' openstack
+2016-06-28 14:11:50.155 | ++ basename openstack/heat
+2016-06-28 14:11:50.156 | + proj=heat
+2016-06-28 14:11:50.157 | + '[' -d /etc/heat ']'
+2016-06-28 14:11:50.159 | + for PROJECT in '$PROJECTS' openstack
+2016-06-28 14:11:50.160 | ++ basename openstack/heat-cfntools
+2016-06-28 14:11:50.162 | + proj=heat-cfntools
+2016-06-28 14:11:50.164 | + '[' -d /etc/heat-cfntools ']'
+2016-06-28 14:11:50.165 | + for PROJECT in '$PROJECTS' openstack
+2016-06-28 14:11:50.166 | ++ basename openstack/heat-templates
+2016-06-28 14:11:50.168 | + proj=heat-templates
+2016-06-28 14:11:50.170 | + '[' -d /etc/heat-templates ']'
+2016-06-28 14:11:50.171 | + for PROJECT in '$PROJECTS' openstack
+2016-06-28 14:11:50.172 | ++ basename openstack/horizon
+2016-06-28 14:11:50.174 | + proj=horizon
+2016-06-28 14:11:50.175 | + '[' -d /etc/horizon ']'
+2016-06-28 14:11:50.177 | + for PROJECT in '$PROJECTS' openstack
+2016-06-28 14:11:50.178 | ++ basename openstack-infra/devstack-gate
+2016-06-28 14:11:50.180 | + proj=devstack-gate
+2016-06-28 14:11:50.181 | + '[' -d /etc/devstack-gate ']'
+2016-06-28 14:11:50.183 | + for PROJECT in '$PROJECTS' openstack
+2016-06-28 14:11:50.184 | ++ basename openstack-infra/tripleo-ci
+2016-06-28 14:11:50.186 | + proj=tripleo-ci
+2016-06-28 14:11:50.187 | + '[' -d /etc/tripleo-ci ']'
+2016-06-28 14:11:50.188 | + for PROJECT in '$PROJECTS' openstack
+2016-06-28 14:11:50.190 | ++ basename openstack/keystone
+2016-06-28 14:11:50.191 | + proj=keystone
+2016-06-28 14:11:50.193 | + '[' -d /etc/keystone ']'
+2016-06-28 14:11:50.194 | + sudo cp -r /etc/keystone /opt/stack/logs/etc/
+2016-06-28 14:11:50.195 | + for PROJECT in '$PROJECTS' openstack
+2016-06-28 14:11:50.197 | ++ basename openstack/keystoneauth
+2016-06-28 14:11:50.198 | + proj=keystoneauth
+2016-06-28 14:11:50.200 | + '[' -d /etc/keystoneauth ']'
+2016-06-28 14:11:50.201 | + for PROJECT in '$PROJECTS' openstack
+2016-06-28 14:11:50.203 | ++ basename openstack/keystonemiddleware
+2016-06-28 14:11:50.205 | + proj=keystonemiddleware
+2016-06-28 14:11:50.206 | + '[' -d /etc/keystonemiddleware ']'
+2016-06-28 14:11:50.208 | + for PROJECT in '$PROJECTS' openstack
+2016-06-28 14:11:50.209 | ++ basename openstack/manila
+2016-06-28 14:11:50.211 | + proj=manila
+2016-06-28 14:11:50.212 | + '[' -d /etc/manila ']'
+2016-06-28 14:11:50.213 | + for PROJECT in '$PROJECTS' openstack
+2016-06-28 14:11:50.216 | ++ basename openstack/manila-ui
+2016-06-28 14:11:50.217 | + proj=manila-ui
+2016-06-28 14:11:50.219 | + '[' -d /etc/manila-ui ']'
+2016-06-28 14:11:50.222 | + for PROJECT in '$PROJECTS' openstack
+2016-06-28 14:11:50.223 | ++ basename openstack/neutron
+2016-06-28 14:11:50.225 | + proj=neutron
+2016-06-28 14:11:50.226 | + '[' -d /etc/neutron ']'
+2016-06-28 14:11:50.228 | + for PROJECT in '$PROJECTS' openstack
+2016-06-28 14:11:50.229 | ++ basename openstack/neutron-fwaas
+2016-06-28 14:11:50.231 | + proj=neutron-fwaas
+2016-06-28 14:11:50.233 | + '[' -d /etc/neutron-fwaas ']'
+2016-06-28 14:11:50.235 | + for PROJECT in '$PROJECTS' openstack
+2016-06-28 14:11:50.236 | ++ basename openstack/neutron-lbaas
+2016-06-28 14:11:50.238 | + proj=neutron-lbaas
+2016-06-28 14:11:50.239 | + '[' -d /etc/neutron-lbaas ']'
+2016-06-28 14:11:50.240 | + for PROJECT in '$PROJECTS' openstack
+2016-06-28 14:11:50.242 | ++ basename openstack/neutron-vpnaas
+2016-06-28 14:11:50.243 | + proj=neutron-vpnaas
+2016-06-28 14:11:50.245 | + '[' -d /etc/neutron-vpnaas ']'
+2016-06-28 14:11:50.246 | + for PROJECT in '$PROJECTS' openstack
+2016-06-28 14:11:50.248 | ++ basename openstack/nova
+2016-06-28 14:11:50.249 | + proj=nova
+2016-06-28 14:11:50.251 | + '[' -d /etc/nova ']'
+2016-06-28 14:11:50.253 | + sudo cp -r /etc/nova /opt/stack/logs/etc/
+2016-06-28 14:11:50.255 | + for PROJECT in '$PROJECTS' openstack
+2016-06-28 14:11:50.256 | ++ basename openstack/octavia
+2016-06-28 14:11:50.257 | + proj=octavia
+2016-06-28 14:11:50.259 | + '[' -d /etc/octavia ']'
+2016-06-28 14:11:50.260 | + for PROJECT in '$PROJECTS' openstack
+2016-06-28 14:11:50.262 | ++ basename openstack/os-apply-config
+2016-06-28 14:11:50.264 | + proj=os-apply-config
+2016-06-28 14:11:50.265 | + '[' -d /etc/os-apply-config ']'
+2016-06-28 14:11:50.267 | + for PROJECT in '$PROJECTS' openstack
+2016-06-28 14:11:50.268 | ++ basename openstack/os-brick
+2016-06-28 14:11:50.269 | + proj=os-brick
+2016-06-28 14:11:50.271 | + '[' -d /etc/os-brick ']'
+2016-06-28 14:11:50.272 | + for PROJECT in '$PROJECTS' openstack
+2016-06-28 14:11:50.274 | ++ basename openstack/os-cloud-config
+2016-06-28 14:11:50.276 | + proj=os-cloud-config
+2016-06-28 14:11:50.277 | + '[' -d /etc/os-cloud-config ']'
+2016-06-28 14:11:50.278 | + for PROJECT in '$PROJECTS' openstack
+2016-06-28 14:11:50.281 | ++ basename openstack/os-collect-config
+2016-06-28 14:11:50.282 | + proj=os-collect-config
+2016-06-28 14:11:50.284 | + '[' -d /etc/os-collect-config ']'
+2016-06-28 14:11:50.286 | + for PROJECT in '$PROJECTS' openstack
+2016-06-28 14:11:50.287 | ++ basename openstack/oslo.cache
+2016-06-28 14:11:50.289 | + proj=oslo.cache
+2016-06-28 14:11:50.290 | + '[' -d /etc/oslo.cache ']'
+2016-06-28 14:11:50.292 | + for PROJECT in '$PROJECTS' openstack
+2016-06-28 14:11:50.293 | ++ basename openstack/oslo.concurrency
+2016-06-28 14:11:50.295 | + proj=oslo.concurrency
+2016-06-28 14:11:50.296 | + '[' -d /etc/oslo.concurrency ']'
+2016-06-28 14:11:50.297 | + for PROJECT in '$PROJECTS' openstack
+2016-06-28 14:11:50.299 | ++ basename openstack/oslo.config
+2016-06-28 14:11:50.300 | + proj=oslo.config
+2016-06-28 14:11:50.302 | + '[' -d /etc/oslo.config ']'
+2016-06-28 14:11:50.304 | + for PROJECT in '$PROJECTS' openstack
+2016-06-28 14:11:50.306 | ++ basename openstack/oslo.context
+2016-06-28 14:11:50.307 | + proj=oslo.context
+2016-06-28 14:11:50.309 | + '[' -d /etc/oslo.context ']'
+2016-06-28 14:11:50.310 | + for PROJECT in '$PROJECTS' openstack
+2016-06-28 14:11:50.312 | ++ basename openstack/oslo.db
+2016-06-28 14:11:50.313 | + proj=oslo.db
+2016-06-28 14:11:50.315 | + '[' -d /etc/oslo.db ']'
+2016-06-28 14:11:50.316 | + for PROJECT in '$PROJECTS' openstack
+2016-06-28 14:11:50.318 | ++ basename openstack/oslo.i18n
+2016-06-28 14:11:50.320 | + proj=oslo.i18n
+2016-06-28 14:11:50.322 | + '[' -d /etc/oslo.i18n ']'
+2016-06-28 14:11:50.324 | + for PROJECT in '$PROJECTS' openstack
+2016-06-28 14:11:50.327 | ++ basename openstack/oslo.log
+2016-06-28 14:11:50.329 | + proj=oslo.log
+2016-06-28 14:11:50.331 | + '[' -d /etc/oslo.log ']'
+2016-06-28 14:11:50.332 | + for PROJECT in '$PROJECTS' openstack
+2016-06-28 14:11:50.334 | ++ basename openstack/oslo.messaging
+2016-06-28 14:11:50.335 | + proj=oslo.messaging
+2016-06-28 14:11:50.337 | + '[' -d /etc/oslo.messaging ']'
+2016-06-28 14:11:50.338 | + for PROJECT in '$PROJECTS' openstack
+2016-06-28 14:11:50.340 | ++ basename openstack/oslo.middleware
+2016-06-28 14:11:50.342 | + proj=oslo.middleware
+2016-06-28 14:11:50.344 | + '[' -d /etc/oslo.middleware ']'
+2016-06-28 14:11:50.345 | + for PROJECT in '$PROJECTS' openstack
+2016-06-28 14:11:50.346 | ++ basename openstack/oslo.policy
+2016-06-28 14:11:50.348 | + proj=oslo.policy
+2016-06-28 14:11:50.349 | + '[' -d /etc/oslo.policy ']'
+2016-06-28 14:11:50.351 | + for PROJECT in '$PROJECTS' openstack
+2016-06-28 14:11:50.352 | ++ basename openstack/oslo.reports
+2016-06-28 14:11:50.354 | + proj=oslo.reports
+2016-06-28 14:11:50.355 | + '[' -d /etc/oslo.reports ']'
+2016-06-28 14:11:50.357 | + for PROJECT in '$PROJECTS' openstack
+2016-06-28 14:11:50.358 | ++ basename openstack/oslo.rootwrap
+2016-06-28 14:11:50.360 | + proj=oslo.rootwrap
+2016-06-28 14:11:50.361 | + '[' -d /etc/oslo.rootwrap ']'
+2016-06-28 14:11:50.364 | + for PROJECT in '$PROJECTS' openstack
+2016-06-28 14:11:50.365 | ++ basename openstack/oslo.serialization
+2016-06-28 14:11:50.367 | + proj=oslo.serialization
+2016-06-28 14:11:50.369 | + '[' -d /etc/oslo.serialization ']'
+2016-06-28 14:11:50.371 | + for PROJECT in '$PROJECTS' openstack
+2016-06-28 14:11:50.372 | ++ basename openstack/oslo.service
+2016-06-28 14:11:50.374 | + proj=oslo.service
+2016-06-28 14:11:50.376 | + '[' -d /etc/oslo.service ']'
+2016-06-28 14:11:50.377 | + for PROJECT in '$PROJECTS' openstack
+2016-06-28 14:11:50.380 | ++ basename openstack/oslo.utils
+2016-06-28 14:11:50.382 | + proj=oslo.utils
+2016-06-28 14:11:50.384 | + '[' -d /etc/oslo.utils ']'
+2016-06-28 14:11:50.386 | + for PROJECT in '$PROJECTS' openstack
+2016-06-28 14:11:50.388 | ++ basename openstack/oslo.versionedobjects
+2016-06-28 14:11:50.389 | + proj=oslo.versionedobjects
+2016-06-28 14:11:50.391 | + '[' -d /etc/oslo.versionedobjects ']'
+2016-06-28 14:11:50.393 | + for PROJECT in '$PROJECTS' openstack
+2016-06-28 14:11:50.395 | ++ basename openstack/oslo.vmware
+2016-06-28 14:11:50.396 | + proj=oslo.vmware
+2016-06-28 14:11:50.398 | + '[' -d /etc/oslo.vmware ']'
+2016-06-28 14:11:50.400 | + for PROJECT in '$PROJECTS' openstack
+2016-06-28 14:11:50.402 | ++ basename openstack/os-net-config
+2016-06-28 14:11:50.404 | + proj=os-net-config
+2016-06-28 14:11:50.405 | + '[' -d /etc/os-net-config ']'
+2016-06-28 14:11:50.407 | + for PROJECT in '$PROJECTS' openstack
+2016-06-28 14:11:50.408 | ++ basename openstack/os-refresh-config
+2016-06-28 14:11:50.410 | + proj=os-refresh-config
+2016-06-28 14:11:50.412 | + '[' -d /etc/os-refresh-config ']'
+2016-06-28 14:11:50.414 | + for PROJECT in '$PROJECTS' openstack
+2016-06-28 14:11:50.416 | ++ basename openstack/pycadf
+2016-06-28 14:11:50.417 | + proj=pycadf
+2016-06-28 14:11:50.419 | + '[' -d /etc/pycadf ']'
+2016-06-28 14:11:50.420 | + for PROJECT in '$PROJECTS' openstack
+2016-06-28 14:11:50.422 | ++ basename openstack/requirements
+2016-06-28 14:11:50.424 | + proj=requirements
+2016-06-28 14:11:50.425 | + '[' -d /etc/requirements ']'
+2016-06-28 14:11:50.427 | + for PROJECT in '$PROJECTS' openstack
+2016-06-28 14:11:50.429 | ++ basename openstack/sahara
+2016-06-28 14:11:50.430 | + proj=sahara
+2016-06-28 14:11:50.432 | + '[' -d /etc/sahara ']'
+2016-06-28 14:11:50.434 | + for PROJECT in '$PROJECTS' openstack
+2016-06-28 14:11:50.435 | ++ basename openstack/sahara-dashboard
+2016-06-28 14:11:50.437 | + proj=sahara-dashboard
+2016-06-28 14:11:50.438 | + '[' -d /etc/sahara-dashboard ']'
+2016-06-28 14:11:50.440 | + for PROJECT in '$PROJECTS' openstack
+2016-06-28 14:11:50.442 | ++ basename openstack/stevedore
+2016-06-28 14:11:50.443 | + proj=stevedore
+2016-06-28 14:11:50.445 | + '[' -d /etc/stevedore ']'
+2016-06-28 14:11:50.446 | + for PROJECT in '$PROJECTS' openstack
+2016-06-28 14:11:50.448 | ++ basename openstack/swift
+2016-06-28 14:11:50.449 | + proj=swift
+2016-06-28 14:11:50.451 | + '[' -d /etc/swift ']'
+2016-06-28 14:11:50.453 | + for PROJECT in '$PROJECTS' openstack
+2016-06-28 14:11:50.454 | ++ basename openstack/taskflow
+2016-06-28 14:11:50.456 | + proj=taskflow
+2016-06-28 14:11:50.457 | + '[' -d /etc/taskflow ']'
+2016-06-28 14:11:50.459 | + for PROJECT in '$PROJECTS' openstack
+2016-06-28 14:11:50.460 | ++ basename openstack/tempest
+2016-06-28 14:11:50.462 | + proj=tempest
+2016-06-28 14:11:50.463 | + '[' -d /etc/tempest ']'
+2016-06-28 14:11:50.465 | + for PROJECT in '$PROJECTS' openstack
+2016-06-28 14:11:50.467 | ++ basename openstack/tempest-lib
+2016-06-28 14:11:50.469 | + proj=tempest-lib
+2016-06-28 14:11:50.471 | + '[' -d /etc/tempest-lib ']'
+2016-06-28 14:11:50.472 | + for PROJECT in '$PROJECTS' openstack
+2016-06-28 14:11:50.474 | ++ basename openstack/tooz
+2016-06-28 14:11:50.476 | + proj=tooz
+2016-06-28 14:11:50.477 | + '[' -d /etc/tooz ']'
+2016-06-28 14:11:50.479 | + for PROJECT in '$PROJECTS' openstack
+2016-06-28 14:11:50.481 | ++ basename openstack/tripleo-heat-templates
+2016-06-28 14:11:50.482 | + proj=tripleo-heat-templates
+2016-06-28 14:11:50.484 | + '[' -d /etc/tripleo-heat-templates ']'
+2016-06-28 14:11:50.486 | + for PROJECT in '$PROJECTS' openstack
+2016-06-28 14:11:50.488 | ++ basename openstack/tripleo-image-elements
+2016-06-28 14:11:50.489 | + proj=tripleo-image-elements
+2016-06-28 14:11:50.491 | + '[' -d /etc/tripleo-image-elements ']'
+2016-06-28 14:11:50.492 | + for PROJECT in '$PROJECTS' openstack
+2016-06-28 14:11:50.494 | ++ basename openstack/tripleo-incubator
+2016-06-28 14:11:50.496 | + proj=tripleo-incubator
+2016-06-28 14:11:50.497 | + '[' -d /etc/tripleo-incubator ']'
+2016-06-28 14:11:50.499 | + for PROJECT in '$PROJECTS' openstack
+2016-06-28 14:11:50.500 | ++ basename openstack/trove
+2016-06-28 14:11:50.502 | + proj=trove
+2016-06-28 14:11:50.504 | + '[' -d /etc/trove ']'
+2016-06-28 14:11:50.505 | + for PROJECT in '$PROJECTS' openstack
+2016-06-28 14:11:50.507 | ++ basename openstack/zaqar
+2016-06-28 14:11:50.508 | + proj=zaqar
+2016-06-28 14:11:50.510 | + '[' -d /etc/zaqar ']'
+2016-06-28 14:11:50.511 | + for PROJECT in '$PROJECTS' openstack
+2016-06-28 14:11:50.514 | ++ basename openstack
+2016-06-28 14:11:50.515 | + proj=openstack
+2016-06-28 14:11:50.517 | + '[' -d /etc/openstack ']'
+2016-06-28 14:11:50.519 | + sudo cp -r /etc/openstack /opt/stack/logs/etc/
+2016-06-28 14:11:50.520 | + sudo mkdir /opt/stack/logs/apache_config
+2016-06-28 14:11:50.522 | + uses_debs
+2016-06-28 14:11:50.524 | + type apt-get
+2016-06-28 14:11:50.526 | apt-get is /usr/bin/apt-get
+2016-06-28 14:11:50.527 | + [[ -d /etc/apache2/sites-enabled ]]
+2016-06-28 14:11:50.529 | + sudo cp /etc/apache2/sites-enabled/000-default.conf /etc/apache2/sites-enabled/keystone.conf /opt/stack/logs/apache_config
+2016-06-28 14:11:50.531 | + '[' -d /opt/stack/old ']'
+2016-06-28 14:11:50.532 | + NEWLOGTARGET=/opt/stack/logs
+2016-06-28 14:11:50.534 | + find /opt/stack/new/screen-logs -type l -print0
+2016-06-28 14:11:50.535 | + xargs -0 -I '{}' sudo cp '{}' /opt/stack/logs/
+2016-06-28 14:11:50.537 | + sudo cp /opt/stack/new/devstacklog.txt /opt/stack/logs/
+2016-06-28 14:11:50.539 | + sudo cp /opt/stack/new/devstack/localrc /opt/stack/logs/localrc.txt
+2016-06-28 14:11:50.540 | + '[' -f /opt/stack/new/devstack/tempest.log ']'
+2016-06-28 14:11:50.542 | ++ ls '/opt/stack/status/stack/*.failure'
+2016-06-28 14:11:50.543 | ++ wc -l
+2016-06-28 14:11:50.545 | ls: cannot access /opt/stack/status/stack/*.failure: No such file or directory
+2016-06-28 14:11:50.546 | + '[' 0 -gt 0 ']'
+2016-06-28 14:11:50.548 | + '[' -d /opt/stack/new/ironic-bm-logs ']'
+2016-06-28 14:11:50.549 | + sudo cp /opt/stack/new/tempest/etc/tempest.conf /opt/stack/logs/tempest_conf.txt
+2016-06-28 14:11:50.551 | + '[' -f /opt/stack/new/tempest/etc/accounts.yaml ']'
+2016-06-28 14:11:50.552 | + '[' -f /opt/stack/new/dstat-csv.log ']'
+2016-06-28 14:11:50.554 | + sudo iptables-save
+2016-06-28 14:11:50.555 | + df -h
+2016-06-28 14:11:50.557 | + sudo mv /home/jenkins/workspace/kaminario-dsvm-tempest-full-FC/iptables.txt /home/jenkins/workspace/kaminario-dsvm-tempest-full-FC/df.txt /opt/stack/logs/
+2016-06-28 14:11:50.558 | + for py_ver in 2 3
+2016-06-28 14:11:50.560 | ++ which python2
+2016-06-28 14:11:50.561 | + [[ -n /usr/bin/python2 ]]
+2016-06-28 14:11:50.563 | + python2 -m pip freeze
+2016-06-28 14:11:52.265 | /usr/local/lib/python2.7/dist-packages/pip/_vendor/requests/packages/urllib3/util/ssl_.py:318: SNIMissingWarning: An HTTPS request has been made, but the SNI (Subject Name Indication) extension to TLS is not available on this platform. This may cause the server to present an incorrect TLS certificate, which can cause validation failures. You can upgrade to a newer version of Python to solve this. For more information, see https://urllib3.readthedocs.org/en/latest/security.html#snimissingwarning.
+2016-06-28 14:11:52.268 |   SNIMissingWarning
+2016-06-28 14:11:52.271 | /usr/local/lib/python2.7/dist-packages/pip/_vendor/requests/packages/urllib3/util/ssl_.py:122: InsecurePlatformWarning: A true SSLContext object is not available. This prevents urllib3 from configuring SSL appropriately and may cause certain SSL connections to fail. You can upgrade to a newer version of Python to solve this. For more information, see https://urllib3.readthedocs.org/en/latest/security.html#insecureplatformwarning.
+2016-06-28 14:11:52.273 |   InsecurePlatformWarning
+2016-06-28 14:11:52.715 | + sudo mv /home/jenkins/workspace/kaminario-dsvm-tempest-full-FC/pip2-freeze.txt /opt/stack/logs/
+2016-06-28 14:11:52.723 | + for py_ver in 2 3
+2016-06-28 14:11:52.725 | ++ which python3
+2016-06-28 14:11:52.727 | + [[ -n /usr/bin/python3 ]]
+2016-06-28 14:11:52.730 | + python3 -m pip freeze
+2016-06-28 14:11:52.770 | /usr/bin/python3: No module named pip
+2016-06-28 14:11:52.778 | + sudo mv /home/jenkins/workspace/kaminario-dsvm-tempest-full-FC/pip3-freeze.txt /opt/stack/logs/
+2016-06-28 14:11:52.784 | ++ command -v dpkg
+2016-06-28 14:11:52.786 | + '[' /usr/bin/dpkg ']'
+2016-06-28 14:11:52.788 | + dpkg -l
+2016-06-28 14:11:52.813 | + gzip -9 dpkg-l.txt
+2016-06-28 14:11:52.827 | + sudo mv /home/jenkins/workspace/kaminario-dsvm-tempest-full-FC/dpkg-l.txt.gz /opt/stack/logs/
+2016-06-28 14:11:52.834 | ++ command -v rpm
+2016-06-28 14:11:52.836 | + '[' ']'
+2016-06-28 14:11:52.838 | + process_stackviz tempest
+2016-06-28 14:11:52.839 | + local project=tempest
+2016-06-28 14:11:52.841 | + local path_prefix=new
+2016-06-28 14:11:52.843 | + local project_path=/opt/stack/new/tempest
+2016-06-28 14:11:52.844 | + local log_path=/opt/stack/logs
+2016-06-28 14:11:52.846 | + [[ new != \n\e\w ]]
+2016-06-28 14:11:52.848 | + local stackviz_path=/opt/stackviz
+2016-06-28 14:11:52.850 | + '[' -d /opt/stackviz/build ']'
+2016-06-28 14:11:52.851 | + process_testr_artifacts tempest
+2016-06-28 14:11:52.853 | + local project=tempest
+2016-06-28 14:11:52.855 | + local path_prefix=new
+2016-06-28 14:11:52.856 | + local project_path=/opt/stack/new/tempest
+2016-06-28 14:11:52.858 | + local repo_path=/opt/stack/new/tempest/.testrepository
+2016-06-28 14:11:52.860 | + local log_path=/opt/stack/logs
+2016-06-28 14:11:52.862 | + [[ new != \n\e\w ]]
+2016-06-28 14:11:52.863 | + [[ -f /opt/stack/devstack.subunit ]]
+2016-06-28 14:11:52.865 | + sudo cp /opt/stack/devstack.subunit /opt/stack/logs/testrepository.subunit
+2016-06-28 14:11:52.866 | + '[' -f '/opt/stack/new/tempest/.testrepository/tmp*' ']'
+2016-06-28 14:11:52.868 | + '[' -f /opt/stack/new/tempest/.testrepository/0 ']'
+2016-06-28 14:11:52.870 | + pushd /opt/stack/new/tempest
+2016-06-28 14:11:52.871 | /opt/stack/new/tempest ~/workspace/kaminario-dsvm-tempest-full-FC
+2016-06-28 14:11:52.873 | + sudo testr last --subunit
+2016-06-28 14:11:53.293 | + popd
+2016-06-28 14:11:53.297 | ~/workspace/kaminario-dsvm-tempest-full-FC
+2016-06-28 14:11:53.299 | + [[ -f /opt/stack/logs/testrepository.subunit ]]
+2016-06-28 14:11:53.301 | + [[ -f /home/jenkins/workspace/kaminario-dsvm-tempest-full-FC/tempest.subunit ]]
+2016-06-28 14:11:53.303 | + sudo cat /home/jenkins/workspace/kaminario-dsvm-tempest-full-FC/tempest.subunit
+2016-06-28 14:11:53.306 | + sudo tee -a /opt/stack/logs/testrepository.subunit
+2016-06-28 14:11:53.307 | + sudo /usr/os-testr-env/bin/subunit2html /opt/stack/logs/testrepository.subunit /opt/stack/logs/testr_results.html
+2016-06-28 14:11:53.759 | + archive_test_artifact /opt/stack/logs/testrepository.subunit
+2016-06-28 14:11:53.761 | + local filename=/opt/stack/logs/testrepository.subunit
+2016-06-28 14:11:53.763 | + sudo gzip -9 /opt/stack/logs/testrepository.subunit
+2016-06-28 14:11:53.814 | + sudo chown jenkins:jenkins /opt/stack/logs/testrepository.subunit.gz
+2016-06-28 14:11:53.820 | + sudo chmod a+r /opt/stack/logs/testrepository.subunit.gz
+2016-06-28 14:11:53.828 | + archive_test_artifact /opt/stack/logs/testr_results.html
+2016-06-28 14:11:53.831 | + local filename=/opt/stack/logs/testr_results.html
+2016-06-28 14:11:53.833 | + sudo gzip -9 /opt/stack/logs/testr_results.html
+2016-06-28 14:11:53.840 | + sudo chown jenkins:jenkins /opt/stack/logs/testr_results.html.gz
+2016-06-28 14:11:53.850 | + sudo chmod a+r /opt/stack/logs/testr_results.html.gz
+2016-06-28 14:11:53.858 | + process_testr_artifacts tempest old
+2016-06-28 14:11:53.860 | + local project=tempest
+2016-06-28 14:11:53.862 | + local path_prefix=old
+2016-06-28 14:11:53.863 | + local project_path=/opt/stack/old/tempest
+2016-06-28 14:11:53.864 | + local repo_path=/opt/stack/old/tempest/.testrepository
+2016-06-28 14:11:53.866 | + local log_path=/opt/stack/logs
+2016-06-28 14:11:53.868 | + [[ old != \n\e\w ]]
+2016-06-28 14:11:53.870 | + log_path=/opt/stack/logs/old
+2016-06-28 14:11:53.872 | + [[ -f /opt/stack/devstack.subunit ]]
+2016-06-28 14:11:53.874 | + sudo cp /opt/stack/devstack.subunit /opt/stack/logs/old/testrepository.subunit
+2016-06-28 14:11:53.877 | cp: cannot create regular file ‘/opt/stack/logs/old/testrepository.subunit’: No such file or directory
+2016-06-28 14:11:53.878 | + '[' -f '/opt/stack/old/tempest/.testrepository/tmp*' ']'
+2016-06-28 14:11:53.880 | + '[' -f /opt/stack/old/tempest/.testrepository/0 ']'
+2016-06-28 14:11:53.882 | + [[ -f /opt/stack/logs/old/testrepository.subunit ]]
+2016-06-28 14:11:53.883 | + '[' -f /opt/stack/new/tempest/tempest.log ']'
+2016-06-28 14:11:53.885 | + sudo cp /opt/stack/new/tempest/tempest.log /opt/stack/logs/tempest.log
+2016-06-28 14:11:53.890 | + '[' -f /opt/stack/old/tempest/tempest.log ']'
+2016-06-28 14:11:53.892 | + '[' -d /var/log/ceph ']'
+2016-06-28 14:11:53.893 | + '[' -f /etc/ceph/ceph.conf ']'
+2016-06-28 14:11:53.895 | + '[' -d /var/log/openvswitch ']'
+2016-06-28 14:11:53.897 | + sudo cp -r /var/log/openvswitch /opt/stack/logs/
+2016-06-28 14:11:53.899 | + sudo chown -R jenkins:jenkins /opt/stack/logs/
+2016-06-28 14:11:53.904 | + sudo chmod -R a+rX /opt/stack/logs/
+2016-06-28 14:11:53.914 | + sed -r 's/[0-9]{1,2}\:[0-9]{1,2}\:[0-9]{1,2}\.[0-9]{1,3}/ /g'
+2016-06-28 14:11:53.916 | + grep -i deprecat /opt/stack/logs/mysql_err.log /opt/stack/logs/mysql.log /opt/stack/logs/screen-c-api.log /opt/stack/logs/screen-c-sch.log /opt/stack/logs/screen-c-vol.log /opt/stack/logs/screen-g-api.log /opt/stack/logs/screen-g-reg.log /opt/stack/logs/screen-n-api.log /opt/stack/logs/screen-n-cond.log /opt/stack/logs/screen-n-cpu.log /opt/stack/logs/screen-n-crt.log /opt/stack/logs/screen-n-dhcp.log /opt/stack/logs/screen-n-net.log /opt/stack/logs/screen-n-sch.log /opt/stack/logs/tempest.log /opt/stack/logs/apache/access.log /opt/stack/logs/apache/error.log /opt/stack/logs/apache/keystone_access.log /opt/stack/logs/apache/keystone.log /opt/stack/logs/apache/other_vhosts_access.log
+2016-06-28 14:11:53.917 | + sed -r 's/[0-9]{1,2}\:[0-9]{1,2}\:[0-9]{1,2}/ /g'
+2016-06-28 14:11:53.919 | + sed -r 's/\[.*\]/ /g'
+2016-06-28 14:11:53.920 | + sed -r 's/\s[0-9]+\s/ /g'
+2016-06-28 14:11:53.922 | + sed -r 's/[0-9]{1,4}-[0-9]{1,2}-[0-9]{1,4}/ /g'
+2016-06-28 14:11:53.923 | + awk '{if ($0 in seen) {seen[$0]++} else {out[++n]=$0;seen[$0]=1}} END { for (i=1; i<=n; i++) print seen[out[i]]" :: " out[i] }'
+2016-06-28 14:11:55.779 | ++ find /opt/stack/logs -name '*.log'
+2016-06-28 14:11:55.783 | + for f in '$(find $BASE/logs -name "*.log")'
+2016-06-28 14:11:55.785 | + sudo mv /opt/stack/logs/screen-n-api.log /opt/stack/logs/screen-n-api.txt
+2016-06-28 14:11:55.793 | + for f in '$(find $BASE/logs -name "*.log")'
+2016-06-28 14:11:55.795 | + sudo mv /opt/stack/logs/screen-n-net.log /opt/stack/logs/screen-n-net.txt
+2016-06-28 14:11:55.801 | + for f in '$(find $BASE/logs -name "*.log")'
+2016-06-28 14:11:55.803 | + sudo mv /opt/stack/logs/screen-c-sch.log /opt/stack/logs/screen-c-sch.txt
+2016-06-28 14:11:55.809 | + for f in '$(find $BASE/logs -name "*.log")'
+2016-06-28 14:11:55.810 | + sudo mv /opt/stack/logs/screen-n-dhcp.log /opt/stack/logs/screen-n-dhcp.txt
+2016-06-28 14:11:55.816 | + for f in '$(find $BASE/logs -name "*.log")'
+2016-06-28 14:11:55.818 | + sudo mv /opt/stack/logs/screen-c-vol.log /opt/stack/logs/screen-c-vol.txt
+2016-06-28 14:11:55.824 | + for f in '$(find $BASE/logs -name "*.log")'
+2016-06-28 14:11:55.825 | + sudo mv /opt/stack/logs/deprecations.log /opt/stack/logs/deprecations.txt
+2016-06-28 14:11:55.831 | + for f in '$(find $BASE/logs -name "*.log")'
+2016-06-28 14:11:55.833 | + sudo mv /opt/stack/logs/mysql_err.log /opt/stack/logs/mysql_err.txt
+2016-06-28 14:11:55.839 | + for f in '$(find $BASE/logs -name "*.log")'
+2016-06-28 14:11:55.840 | + sudo mv /opt/stack/logs/tempest.log /opt/stack/logs/tempest.txt
+2016-06-28 14:11:55.846 | + for f in '$(find $BASE/logs -name "*.log")'
+2016-06-28 14:11:55.849 | + sudo mv /opt/stack/logs/mysql.log /opt/stack/logs/mysql.txt
+2016-06-28 14:11:55.854 | + for f in '$(find $BASE/logs -name "*.log")'
+2016-06-28 14:11:55.857 | + sudo mv /opt/stack/logs/apache/error.log /opt/stack/logs/apache/error.txt
+2016-06-28 14:11:55.859 | + for f in '$(find $BASE/logs -name "*.log")'
+2016-06-28 14:11:55.861 | + sudo mv /opt/stack/logs/apache/other_vhosts_access.log /opt/stack/logs/apache/other_vhosts_access.txt
+2016-06-28 14:11:55.866 | + for f in '$(find $BASE/logs -name "*.log")'
+2016-06-28 14:11:55.868 | + sudo mv /opt/stack/logs/apache/access.log /opt/stack/logs/apache/access.txt
+2016-06-28 14:11:55.874 | + for f in '$(find $BASE/logs -name "*.log")'
+2016-06-28 14:11:55.876 | + sudo mv /opt/stack/logs/apache/keystone.log /opt/stack/logs/apache/keystone.txt
+2016-06-28 14:11:55.881 | + for f in '$(find $BASE/logs -name "*.log")'
+2016-06-28 14:11:55.883 | + sudo mv /opt/stack/logs/apache/keystone_access.log /opt/stack/logs/apache/keystone_access.txt
+2016-06-28 14:11:55.888 | + for f in '$(find $BASE/logs -name "*.log")'
+2016-06-28 14:11:55.889 | + sudo mv /opt/stack/logs/libvirt/libvirtd.log /opt/stack/logs/libvirt/libvirtd.txt
+2016-06-28 14:11:55.896 | + for f in '$(find $BASE/logs -name "*.log")'
+2016-06-28 14:11:55.897 | + sudo mv /opt/stack/logs/libvirt/qemu/instance-0000000b.log /opt/stack/logs/libvirt/qemu/instance-0000000b.txt
+2016-06-28 14:11:55.904 | + for f in '$(find $BASE/logs -name "*.log")'
+2016-06-28 14:11:55.905 | + sudo mv /opt/stack/logs/libvirt/qemu/instance-0000000a.log /opt/stack/logs/libvirt/qemu/instance-0000000a.txt
+2016-06-28 14:11:55.911 | + for f in '$(find $BASE/logs -name "*.log")'
+2016-06-28 14:11:55.912 | + sudo mv /opt/stack/logs/libvirt/qemu/instance-00000004.log /opt/stack/logs/libvirt/qemu/instance-00000004.txt
+2016-06-28 14:11:55.918 | + for f in '$(find $BASE/logs -name "*.log")'
+2016-06-28 14:11:55.919 | + sudo mv /opt/stack/logs/libvirt/qemu/instance-00000009.log /opt/stack/logs/libvirt/qemu/instance-00000009.txt
+2016-06-28 14:11:55.925 | + for f in '$(find $BASE/logs -name "*.log")'
+2016-06-28 14:11:55.926 | + sudo mv /opt/stack/logs/libvirt/qemu/instance-00000007.log /opt/stack/logs/libvirt/qemu/instance-00000007.txt
+2016-06-28 14:11:55.933 | + for f in '$(find $BASE/logs -name "*.log")'
+2016-06-28 14:11:55.935 | + sudo mv /opt/stack/logs/libvirt/qemu/instance-00000002.log /opt/stack/logs/libvirt/qemu/instance-00000002.txt
+2016-06-28 14:11:55.942 | + for f in '$(find $BASE/logs -name "*.log")'
+2016-06-28 14:11:55.943 | + sudo mv /opt/stack/logs/libvirt/qemu/instance-00000006.log /opt/stack/logs/libvirt/qemu/instance-00000006.txt
+2016-06-28 14:11:55.946 | + for f in '$(find $BASE/logs -name "*.log")'
+2016-06-28 14:11:55.948 | + sudo mv /opt/stack/logs/libvirt/qemu/instance-00000005.log /opt/stack/logs/libvirt/qemu/instance-00000005.txt
+2016-06-28 14:11:55.952 | + for f in '$(find $BASE/logs -name "*.log")'
+2016-06-28 14:11:55.954 | + sudo mv /opt/stack/logs/libvirt/qemu/instance-00000001.log /opt/stack/logs/libvirt/qemu/instance-00000001.txt
+2016-06-28 14:11:55.959 | + for f in '$(find $BASE/logs -name "*.log")'
+2016-06-28 14:11:55.961 | + sudo mv /opt/stack/logs/libvirt/qemu/instance-00000003.log /opt/stack/logs/libvirt/qemu/instance-00000003.txt
+2016-06-28 14:11:55.965 | + for f in '$(find $BASE/logs -name "*.log")'
+2016-06-28 14:11:55.967 | + sudo mv /opt/stack/logs/libvirt/qemu/instance-0000000c.log /opt/stack/logs/libvirt/qemu/instance-0000000c.txt
+2016-06-28 14:11:55.971 | + for f in '$(find $BASE/logs -name "*.log")'
+2016-06-28 14:11:55.973 | + sudo mv /opt/stack/logs/libvirt/qemu/instance-00000008.log /opt/stack/logs/libvirt/qemu/instance-00000008.txt
+2016-06-28 14:11:55.977 | + for f in '$(find $BASE/logs -name "*.log")'
+2016-06-28 14:11:55.978 | + sudo mv /opt/stack/logs/rabbitmq/rabbit@d-p-c-local-01-19-sasl.log /opt/stack/logs/rabbitmq/rabbit@d-p-c-local-01-19-sasl.txt
+2016-06-28 14:11:55.984 | + for f in '$(find $BASE/logs -name "*.log")'
+2016-06-28 14:11:55.986 | + sudo mv /opt/stack/logs/rabbitmq/rabbit@d-p-c-local-01-19.log /opt/stack/logs/rabbitmq/rabbit@d-p-c-local-01-19.txt
+2016-06-28 14:11:55.990 | + for f in '$(find $BASE/logs -name "*.log")'
+2016-06-28 14:11:55.991 | + sudo mv /opt/stack/logs/screen-n-cond.log /opt/stack/logs/screen-n-cond.txt
+2016-06-28 14:11:55.996 | + for f in '$(find $BASE/logs -name "*.log")'
+2016-06-28 14:11:55.997 | + sudo mv /opt/stack/logs/screen-n-crt.log /opt/stack/logs/screen-n-crt.txt
+2016-06-28 14:11:56.002 | + for f in '$(find $BASE/logs -name "*.log")'
+2016-06-28 14:11:56.003 | + sudo mv /opt/stack/logs/screen-c-api.log /opt/stack/logs/screen-c-api.txt
+2016-06-28 14:11:56.007 | + for f in '$(find $BASE/logs -name "*.log")'
+2016-06-28 14:11:56.009 | + sudo mv /opt/stack/logs/screen-n-sch.log /opt/stack/logs/screen-n-sch.txt
+2016-06-28 14:11:56.014 | + for f in '$(find $BASE/logs -name "*.log")'
+2016-06-28 14:11:56.016 | + sudo mv /opt/stack/logs/openvswitch/ovsdb-server.log /opt/stack/logs/openvswitch/ovsdb-server.txt
+2016-06-28 14:11:56.020 | + for f in '$(find $BASE/logs -name "*.log")'
+2016-06-28 14:11:56.022 | + sudo mv /opt/stack/logs/openvswitch/ovs-ctl.log /opt/stack/logs/openvswitch/ovs-ctl.txt
+2016-06-28 14:11:56.026 | + for f in '$(find $BASE/logs -name "*.log")'
+2016-06-28 14:11:56.027 | + sudo mv /opt/stack/logs/openvswitch/ovs-vswitchd.log /opt/stack/logs/openvswitch/ovs-vswitchd.txt
+2016-06-28 14:11:56.033 | + for f in '$(find $BASE/logs -name "*.log")'
+2016-06-28 14:11:56.035 | + sudo mv /opt/stack/logs/screen-g-api.log /opt/stack/logs/screen-g-api.txt
+2016-06-28 14:11:56.039 | + for f in '$(find $BASE/logs -name "*.log")'
+2016-06-28 14:11:56.040 | + sudo mv /opt/stack/logs/screen-n-cpu.log /opt/stack/logs/screen-n-cpu.txt
+2016-06-28 14:11:56.045 | + for f in '$(find $BASE/logs -name "*.log")'
+2016-06-28 14:11:56.046 | + sudo mv /opt/stack/logs/screen-g-reg.log /opt/stack/logs/screen-g-reg.txt
+2016-06-28 14:11:56.051 | ++ find /opt/stack/logs/status -name '*.failure'
+2016-06-28 14:11:56.053 | find: `/opt/stack/logs/status': No such file or directory
+2016-06-28 14:11:56.054 | + find /opt/stack/logs/sudoers.d /opt/stack/logs/etc -type f -exec mv '{}' '{}.txt' ';'
+2016-06-28 14:11:56.122 | + '[' -f /opt/stack/logs/rabbitmq/ ']'
+2016-06-28 14:11:56.123 | + '[' -d /var/log/glusterfs ']'
+2016-06-28 14:11:56.125 | + '[' -f /etc/glusterfs/glusterd.vol ']'
+2016-06-28 14:11:56.126 | + ps -eo user,pid,ppid,lwp,%cpu,%mem,size,rss,cmd
+2016-06-28 14:11:56.140 | + sudo find /opt/stack/logs -iname '*.txt' -execdir gzip -9 '{}' +
+2016-06-28 14:11:57.221 | + sudo find /opt/stack/logs -iname '*.dat' -execdir gzip -9 '{}' +
+2016-06-28 14:11:57.230 | + sudo find /opt/stack/logs -iname '*.conf' -execdir gzip -9 '{}' +
+2016-06-28 14:11:57.240 | + set +o xtrace
